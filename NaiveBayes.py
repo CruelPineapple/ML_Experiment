@@ -58,7 +58,7 @@ def main():
         [3, "L"],
     ])
     y_train = np.array([-1, -1, 1, 1, -1, -1, -1, 1, 1, 1, 1, 1, 1, 1, -1])
-    clf = NaiveBayes(lambda_=0.0)  #lambda_=1.0为拉普拉斯平滑
+    clf = NaiveBayes(lambda_=0.0)  # lambda_=1.0为拉普拉斯平滑
     clf.train(X_train, y_train)
     X_new = np.array([2, "S"])   # 课本p65例子
     y_predict = clf.predict(X_new)
