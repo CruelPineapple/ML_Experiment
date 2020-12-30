@@ -34,6 +34,7 @@ def _find_min(L, num):
         pro_res.append(value)
     return pro_res
 
+
 def _judge(res):
     for s in res.values():
         try:
